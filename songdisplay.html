@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auralift</title>
+    <link rel="stylesheet" href="songdisplay.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Auralift</h1>
+        <p class="username">Hello, Listeners!</p>
+        <button class="logout-btn">LOG OUT</button>
+        <input type="text" placeholder="Search" class="search-bar">
+        <nav>
+            <ul>
+                <li><a href="#">Liked Songs</a></li>
+                <!-- <li><a href="#">Your Playlists</a></li>
+                <li><a href="#">New Playlist</a></li> -->
+                <li><a href="#">Songs</a></li>
+                <li><a href="#">Albums</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Play Music</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="song-card">
+            <div class="song-card-header">
+                <img src="data:image/jpeg;base64,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" alt="Map of the soul 7">
+                <h2>Black Swan</h2>
+                <p>Music by BTS</p>
+            </div>
+
+            <div class="likes-section">
+                <p class="liked-message">You liked this song!</p>
+                <p>2 Likes</p>
+                <button class="toggle-like">Like</button>
+            </div>
+
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #26233B;
+    color: white;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #4A3B81;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.username {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    background-color: #6B59B3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.section-title {
+    color: #6FFFE9;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Albums and Artists Grid */
+.albums-grid, .artists-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.album-card, .artist-card {
+    background-color: #57506C;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.album-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.album-card.red {
+    background-color: #E84057;
+}
+
+.artist-card {
+    background-color: #6B59B3;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+}
